@@ -8,10 +8,21 @@
     <h1>Hello World!</h1>
     <p>My name is Scott.</p>
     <script>
-    var userName = prompt('Hello, What\'s your name?')
+    var userName = prompt('Scott')
     alert("Hello" + " " + userName + " " + "very nice to meet you");
 
     console.log('This is the userName variable: ' + userName);
+
+    if (userName === 'Scott') {
+      console.log('Scott is correct');
+    } else if (userName === 'Molly') {
+      console.log('Molly is correct')
+    } else {
+      console.log('You didn\'t guess the correct name.');
+      console.log('Hello World');
+    }
+
+    // Other code evaluated after a True evaluation in the If/Else
     </script>
   </body>
 </html>
