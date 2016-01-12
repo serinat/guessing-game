@@ -40,6 +40,11 @@ if (question3 === "yes" || question3 === "y" || question3 === "YES" || question3
 var question4 = prompt("How young am I?")
   console.log("This is my fourth question variable" + " " + question4);
 
+if (question4 === "37") {
+  console.log("You got it!");
+  alert("You got it!");
+}
+
 if (question4 < "37") {
   console.log("You are too low");
   alert("You are too low");
