@@ -1,80 +1,46 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Guessing game</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <p>My name is Serina.</p>
+var userName = prompt('What\'s your name?')
+alert("Hello" + " " + userName + " " + "very nice to meet you");
 
-    <script>
-    var userName = prompt('Serina')
-    alert("Hello" + " " + userName + " " + "very nice to meet you");
-      console.log('This is the userName variable: ' + userName);
-    if (userName === 'Serina') {
-      console.log('Serina is correct');
-    } else {
-      console.log('You didn\'t guess the correct name.');
-      console.log('Hello World');
-    }
-    </script>
+var question1 = prompt("Did I grow up in Seattle?")
+console.log("This is my first question variable" + " " + question1);
 
-    <script type="text/javascript">
-    {
-      var answer = "  "
-      var statement="Answer yes or no"
-      var answer=prompt("Did I grow up in Seattle?")
-      if (answer == "yes")
-        {statement="You are correct!"}
-        console.log('Yes is correct');
-      if (answer == "no")
-        {statement="You are incorrect"}
-        console.log('No is incorrect');
-      alert(statement)
-    }
+if (question1 === "yes") {
+console.log("Yes is correct!");
+alert("Yes is correct!");
+} else if (question1 === "no") {
+console.log("No is incorrect");
+alert("No is incorrect");
+};
 
-    {
-      var answer = "  "
-      var statement="Answer yes or no"
-      var answer=prompt("Do I have arachnophobia?")
-      if (answer == "yes")
-        {statement="You are correct!"}
-        console.log('Yes is correct');
-      if (answer == "no")
-        {statement="You are incorrect"}
-        console.log('No is incorrect');
-      alert(statement)
-    }
+var question2 = prompt("Do I have arachnaphobia?")
+console.log("This is my second question variable" + " " + question2);
 
-    {
-      var answer = "  "
-      var statement="Answer yes or no"
-      var answer=prompt("Do I have two cats?")
-      if (answer == "yes")
-        {statement="You are incorrect"}
-        console.log('Yes is incorrect');
-      if (answer == "no")
-        {statement="You are correct. I have two dogs."}
-        console.log('No is correct');
-      alert(statement)
-    }
-    </script>
+if (question2 === "yes") {
+console.log("Yes is correct!");
+alert("Yes is correct!");
+} else if (question2 === "no") {
+console.log("No is incorrect");
+alert("No is incorrect");
+};
 
-    <script type="text/javascript">
-    {
-      var age = "  "
-      var msg="You got it!"
-      var age=prompt("How young am I?")
-      if (age < 37)
-        msg = "Too low";
-        console.log('Too low');
+var question3 = prompt("Do I have two cats?")
+console.log("This is my third question variable" + " " + question3);
 
-      if (age > 37)
-        msg = "Too high";
-        console.log('Too high');
-      alert(msg)
-    }
-    </script>
-  </body>
-</html>
+if (question3 === "yes") {
+console.log("Yes is incorrect");
+alert("Yes is incorrect");
+} else if (question3 === "no") {
+console.log("No is correct. I have two dogs");
+alert("No is correct. I have two dogs");
+};
+
+var question4 = prompt("How young am I?")
+console.log("This is my fourth question variable" + " " + question4);
+
+if (question4 < "37") {
+  console.log("You are too low");
+  alert("You are too low");
+} else if (question4 > "37") {
+  console.log("You are too high");
+  alert("You are too high");
+};
