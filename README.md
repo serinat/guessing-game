@@ -10,6 +10,16 @@ guessing-game repository is comprised of index.html, index2.html and index3.html
 
 -game.js file contains the Javascript portion of index3.html.
 
+UPDATE 1/17/16
+
+-First pair programming exercise: work on a partner's code using a separate branch then push updates/changes to branch, merge branch with master, then pull to master
+
+-Added game functionality by encapsulating functions
+
+-Removed alerts so that answers to questions are on webpage using DOM
+
+-My partner is Stephanie Lopez: https://github.com/sllopez
+
 TROUBLESHOOTING/issues:
 
 -At first I had problems getting the counter to function. It wouldn't count the first question after answering correctly. I resolved this by moving the counter before the alert.
