@@ -1,66 +1,37 @@
+var questions = ["Did I grow up in Seattle?", "Do I have arachnaphobia?", "Do I have two cats?"];
+var answers = ["yes", "yes", "no"];
+var counter = 0;
+
+alert("Welcome to my guessing game. I'm going to ask you a couple of yes or no questions so you can get to know me.");
+
+function updatePage(elId, text) {
+  document.getElementById(elId).textContent = text;
+}
 
 
-    var userName = prompt('Serina')
-    alert("Hello" + " " + userName + " " + "very nice to meet you");
-      console.log('This is the userName variable: ' + userName);
-    if (userName === 'Serina') {
-      console.log('Serina is correct');
-    } else {
-      console.log('You didn\'t guess the correct name.');
-      console.log('Hello World');
-    }
+function userScore() {
+  updatePage("userScore", "You got " + counter + " out of " + questions.length + " correct!");
+}
 
 
+function game(question, answer) {
+  var ques = prompt(question)
+  console.log("answers to question " + ques);
+  console.log(answer + ": answer");
+  console.log(answer == ques);
 
-    {
-      var answer = "  "
-      var statement="Answer yes or no"
-      var answer=prompt("Did I grow up in Seattle?")
-      if (answer == "yes")
-        {statement="You are correct!"}
-        console.log('Yes is correct');
-      if (answer == "no")
-        {statement="You are incorrect"}
-        console.log('No is incorrect');
-      alert(statement)
-    }
+  updatePage("question", question);
+  updatePage("answer", answer);
 
-    {
-      var answer = "  "
-      var statement="Answer yes or no"
-      var answer=prompt("Do I have arachnophobia?")
-      if (answer == "yes")
-        {statement="You are correct!"}
-        console.log('Yes is correct');
-      if (answer == "no")
-        {statement="You are incorrect"}
-        console.log('No is incorrect');
-      alert(statement)
-    }
+  if(answer == ques) {
+    counter +=1
+    console.log(counter);
+  updatePage("isCorrect", "Congrats! You are correct!  You've guessed " + counter + " out of 3 correct.");
+  } else {
+  updatePage("isCorrect", "Sorry, you are incorrect.");
+  }
+};
 
-    {
-      var answer = "  "
-      var statement="Answer yes or no"
-      var answer=prompt("Do I have two cats?")
-      if (answer == "yes")
-        {statement="You are incorrect"}
-        console.log('Yes is incorrect');
-      if (answer == "no")
-        {statement="You are correct. I have two dogs."}
-        console.log('No is correct');
-      alert(statement)
-    }
-
-    {
-      var age = "  "
-      var msg="You got it!"
-      var age=prompt("How young am I?")
-      if (age < 37)
-        msg = "Too low";
-        console.log('Too low');
-
-      if (age > 37)
-        msg = "Too high";
-        console.log('Too high');
-      alert(msg)
-    }
+  for (var i = 0; i < questions.length; i++) {
+    game(questions[i], answers [i]);
+}

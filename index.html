@@ -2,29 +2,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Guessing Game Demo</title>
+    <title>Guessing game</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <p>My name is Scott.</p>
-    <script>
-    var userName = prompt('Scott')
-    alert("Hello" + " " + userName + " " + "very nice to meet you");
+    <h1>Hello World! Welcome to my guessing game!</h1>
+    <p>My name is Serina.</p>
 
-    console.log('This is the userName variable: ' + userName);
+    <p id="question"></p>
+    <p id="answer"></p>
+    <p id="isCorrect"></p>
+    <p id="userScore"></p>
 
-    if (userName === 'Scott') {
-      console.log('Scott is correct');
-    } else if (userName === 'Molly') {
-      console.log('Molly is correct')
-    } else {
-      console.log('You didn\'t guess the correct name.');
-      console.log('Hello World');
-    }
-
-
-
-    // Other code evaluated after a True evaluation in the If/Else
-    </script>
+  <script src="game.js"></script>
   </body>
 </html>
