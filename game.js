@@ -1,79 +1,66 @@
-var userName = prompt("Hello, what\'s your name?")
-  alert("Hello" + "," + " " + userName + "." + " " + "It\'s very nice to meet you.");
-
-  alert("Welcome to my guessing game! Please answer the four following questions to see how well you know me!");
-
-var counter = 0;
-
-var question1 = prompt("Did I grow up in Seattle?")
-  console.log("This is my first question variable" + " " + question1);
 
 
-if (question1 ==="yes" || question1 ==="y" || question1 ==="YES" || question1 ==="Y") {
-  console.log(question1 + " " + "is correct!" + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
-  counter ++;
-  alert(question1 + " " + "is correct!" + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
+    var userName = prompt('Serina')
+    alert("Hello" + " " + userName + " " + "very nice to meet you");
+      console.log('This is the userName variable: ' + userName);
+    if (userName === 'Serina') {
+      console.log('Serina is correct');
+    } else {
+      console.log('You didn\'t guess the correct name.');
+      console.log('Hello World');
+    }
 
 
-} else if (question1 === "no" || question1 === "n" || question1 === "NO" || question1 === "N") {
-  console.log("Sorry" + "," + " " + question1 + " " + "is incorrect.");
-  alert("Sorry" + "," + " " + question1 + " " + "is incorrect.");
-};
 
-var question2 = prompt("Do I have arachnaphobia?")
-  console.log("This is my second question variable" + " " + question2);
+    {
+      var answer = "  "
+      var statement="Answer yes or no"
+      var answer=prompt("Did I grow up in Seattle?")
+      if (answer == "yes")
+        {statement="You are correct!"}
+        console.log('Yes is correct');
+      if (answer == "no")
+        {statement="You are incorrect"}
+        console.log('No is incorrect');
+      alert(statement)
+    }
 
-if (question2 === "yes" || question2 === "y" || question2 === "YES" || question2 === "Y") {
-  console.log(question2 + " " + "is correct!" + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
-  counter ++;
-  alert(question2 + " " + "is correct!" + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
+    {
+      var answer = "  "
+      var statement="Answer yes or no"
+      var answer=prompt("Do I have arachnophobia?")
+      if (answer == "yes")
+        {statement="You are correct!"}
+        console.log('Yes is correct');
+      if (answer == "no")
+        {statement="You are incorrect"}
+        console.log('No is incorrect');
+      alert(statement)
+    }
 
+    {
+      var answer = "  "
+      var statement="Answer yes or no"
+      var answer=prompt("Do I have two cats?")
+      if (answer == "yes")
+        {statement="You are incorrect"}
+        console.log('Yes is incorrect');
+      if (answer == "no")
+        {statement="You are correct. I have two dogs."}
+        console.log('No is correct');
+      alert(statement)
+    }
 
-} else if (question2 === "no" || question2 === "n" || question2 ==="NO" || question2 ==="N") {
-  console.log("Sorry" + "," + " " + question2 + " " + "is incorrect.");
-  alert("Sorry" + "," + " " + question2 + " " + "is incorrect.");
-};
+    {
+      var age = "  "
+      var msg="You got it!"
+      var age=prompt("How young am I?")
+      if (age < 37)
+        msg = "Too low";
+        console.log('Too low');
 
-var question3 = prompt("Do I have two cats?")
-  console.log("This is my third question variable" + " " + question3);
-
-if (question3 === "yes" || question3 === "y" || question3 === "YES" || question3 === "Y") {
-  console.log("Sorry" + "," + " " + question3 + " " + "is incorrect.");
-  alert("Sorry" + "," + " " + question3 + " " + "is incorrect.");
-
-} else if (question3 === "no" || question3 === "n" || question3 === "NO" || question3 === "N") {
-  console.log(question3 + " " + "is correct! I have two dogs." + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
-  counter ++;
-  alert(question3 + " " + "is correct! I have two dogs." + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
-
-};
-
-var question4 = prompt("How young am I?")
-  console.log("This is my fourth question variable" + " " + question4);
-
-if (question4 === "37") {
-  console.log("You got it!" + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
-  counter ++;
-  alert("You got it!" + " " + "You've guessed" + " " + counter + " " + "out of 4 questions correctly!");
-
-};
-
-if (question4 < "37") {
-  console.log("Sorry" + "," + " " + "you are too low.");
-  alert("Sorry" + "," + " " + "you are too low.");
-} else if (question4 > "37") {
-  console.log("Sorry" + "," + " " + "you are too high.");
-  alert("Sorry" + "," + " " + "you are too high.");
-};
-
-if (counter === 4) {
-  console.log("Congrats" + "," + " " + userName + "!!!" + " " + "Are you sure you didn't cheat?!");
-  alert("Congrats" + "," + " " + userName + "!!!" + " " + "Are you sure you didn't cheat?!");
-
-} else if (counter >= 3) {
-  alert("Good job" + "," + " " + userName + "." + " " + "You know me pretty well!");
-  console.log("Good job" + "," + " " + userName + "." + " " + "You know me pretty well!");
-} else if (counter < 3) {
-  alert("Don't worry" + "," + " " + userName + "." + " " + "It's only a matter of time!");
-  console.log("Don't worry" + "," + " " + userName + "." + " " + "It's only a matter of time!");
-};
+      if (age > 37)
+        msg = "Too high";
+        console.log('Too high');
+      alert(msg)
+    }
