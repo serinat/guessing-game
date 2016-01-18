@@ -23,3 +23,9 @@ UPDATE 1/17/16
 TROUBLESHOOTING/issues:
 
 -At first I had problems getting the counter to function. It wouldn't count the first question after answering correctly. I resolved this by moving the counter before the alert.
+
+UPDATE 1/17/16
+
+-Continued pair programming exercise by cleaning up functions and fixing layout of alerts in browser window for Stephanie Lopez' guessing game and my game (since we didn't have time to switch driver-navigator roles in lab).
+
+
