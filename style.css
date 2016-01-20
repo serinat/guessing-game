@@ -6,17 +6,20 @@ h1 {
   color: blue;
   font-family: monospace;
   font-size: 40px;
+  text-align: center;
 }
 
 h3 {
   color: #00e52f;
   font-family: monospace;
   font-size: 25px;
+  text-align: center;
 }
 
 body {
   font-family: monospace;
   font-size: 20px;
+  text-align: center;
 }
 
 #greeting {
@@ -33,4 +36,8 @@ body {
 .incorrect {
   color: brown;
   float: right;
+}
+
+#im1, #im2, #im3, #im4 {
+  text-align: left;
 }
