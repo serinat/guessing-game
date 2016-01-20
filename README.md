@@ -28,4 +28,7 @@ UPDATE 1/17/16
 
 -Continued pair programming exercise by cleaning up functions and fixing layout of alerts in browser window for Stephanie Lopez' guessing game and my game (since we didn't have time to switch driver-navigator roles in lab).
 
+UPDATE 1/20/16
+
+-Continued pair programming although my partner (Andrew Watson) and I spent most of lab time practicing merge conflicts. I added CSS to my guessing-game such as changing colors and adding images to responses. 
 
