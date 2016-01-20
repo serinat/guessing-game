@@ -1,3 +1,7 @@
+* {
+  background-image: url("seattle watercolor1.jpg");
+}
+
 h1 {
   color: blue;
   font-family: monospace;
@@ -15,10 +19,18 @@ body {
   font-size: 20px;
 }
 
+#greeting {
+  color: red;
+  font-family: monospace;
+  font-size: 20px;
+}
+
 .correct {
-  color: green;
+  color: DeepPink;
+  float: right;
 }
 
 .incorrect {
-  color: red;
+  color: brown;
+  float: right;
 }
